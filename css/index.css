@@ -613,7 +613,7 @@ input[id=tab4-3]:checked ~ .event-view-t .tab-btn-box3 label[for=tab4-3]{
     text-align: center;
 }
 .slide-mobile li img{
-    width: 500px;
+    width: 300px;
 }
 
 .slide-mobile input{
