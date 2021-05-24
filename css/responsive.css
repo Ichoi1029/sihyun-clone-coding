@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* 테블릿 */
+@media (max-width: 1024px) {
+    .gnb {
+        position: fixed;
+        top: 0;
+        padding-top: 60px;
+        left: 100%;
+        width: 50%;
+        height: 100%;
+        background: rgba(255,255,255,0.8);
+        z-index: 998;
+    }
+    .gnb.active {
+        left: 50%;
+    }
+    .gnb.active {
+        display: block;
+    }
+    .gnb .gnb-item {
+        display: block;
+        margin: 1.5rem auto;
+        border: none;
+        border-left:none;
+        width: 150px;
+        
+    }
+    .gnb .gnb-item:nth-child(1),
+    .gnb .gnb-item:nth-child(6){
+        width: 130px;
+    }
+    .gnb .gnb-item .title {
+        font-size: var(--font-tertiary);
+        color: var(--main-color);
+        font-weight: var(--font-w-light);
+    }
+    .gnb-item .gnb-item-wrap {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    }
+    .gnb-item-sns{
+        visibility: visible;    
+    }
+    .btn-toggle {
+        display: block;
+    }
+    .sns-asid{
+        display: none;
+    }
+    .youtub-container .left,
+    .youtub-container .right{
+        display: block;
+        width: 100%;
+    }
+    .youtub-container .left:hover,
+    .youtub-container .right:hover{
+        display: block;
+        width: 100%;
+    }
+    .event-container {
+        display: none;
+    }
+    .event-container-tablet {
+        display: block;
+    }
+
+/* 모바일 */
+}
+@media (max-width: 767px){
+    .event-container-tablet {
+        display: none;
+    }
+    .event-container-mobile{
+        display: block;
+    }
+    .gnb-item-sns{
+        visibility: visible;
+        
+    }
+}

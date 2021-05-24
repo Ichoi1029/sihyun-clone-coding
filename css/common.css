@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* header */
+:root{
+    /* color */
+    --primary-color: #fff;
+    --main-color:#cf121b;
+    --secondary-color:#333;
+    --tertiary-color:#ccc;
+
+    /* typography */
+    /* font-size */
+    --font-primary: 32px;
+    --font-secondary: 1.5rem;
+    --font-tertiary: 1rem;
+    --font-regular: 18px;
+
+    /* font weight */
+    --font-w-heavy:900;
+    --font-w-light:400;
+    --font-w-regular:700;
+}
+#header{
+    padding: 0 20px;
+    height: 60px;
+    line-height: 20px;
+    background: #fefefe;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+#header .logo {
+    float: left;
+    margin-left: 40px;
+    width: 130px;
+    height: 26px;
+    background: url(/image/logo_m.png) no-repeat center;
+    background-size: 130px auto;
+    margin-top: 20px;
+}
+.gnb {
+    float: right;
+    margin-top: 23px;
+    text-align: left;
+}
+.gnb .gnb-item{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+.gnb-item:nth-child(7) {
+    display: none;
+}
+.gnb-item-sns li {
+  float: left;
+}
+.gnb-item-sns li img{
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+}
+.gnb .gnb-item:nth-child(1){
+    width: 100px;
+}
+.gnb .gnb-item:nth-child(6){
+    width: 60px;
+}
+.gnb .gnb-item .title {
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+.gnb-item-wrap{
+    position: absolute;
+    padding: 10px;
+    top: 70px;
+    width: 150px;
+    background: rgba(255, 255, 255, 0.486);
+    text-align: left;
+    visibility: hidden;
+}
+.gnb-item:hover .gnb-item-wrap{
+    visibility: visible;
+}
+.gnb-item-wrap a{
+    font-weight: 100;
+}
+.gnb-item-wrap li {
+    padding: 5px;
+}
+.gnb-item-wrap li h4{
+    font-weight: bold;
+}
+
+.gnb .gnb-item a:hover{
+    color: #cf121b;
+}
+.btn-toggle {
+    position: absolute;
+    top: 15px;
+    right: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    color: #333;
+}
+
+/* footer */
+footer {
+    background: #fafafa;
+    padding: 35px 0 35px;
+    text-align: center;
+    color: #ccc;
+}
+footer .copy_txt{
+    color: #aaa;
+}

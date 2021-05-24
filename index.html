@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/responsive.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>main page</title>
+</head>
+<body>
+    <div class="wrap">
+<!-- header -->
+        <header id="header" class="clearfix">
+            <a href="#"><div class="logo"></div></a>
+            <ul class="gnb">
+                <li class="gnb-item">
+                    <a class="title" href="./brand.html">Brand</a>
+                    <ul class="gnb-item-wrap">
+                        <li><a href="#"><h4>About</h4></a></li>
+                        <li><a href="#">시현하다</a></li>
+                        <li><a href="#">(주)레코더스</a></li>
+                        <li></li>
+                        <li><a href="#"><h4>NOTICE</h4></a></li>
+                        <li></li>
+                        <li><a href="#"><h4>기록가 모집</h4></a></li>
+                        <li><a href="#">문하생</a></li>
+                        <li><a href="#">아티스트</a></li>
+                        <li></li>
+                        <li><a href="#"><h4>레코더즈 LAB</h4></a></li>
+                        <li><a href="#">오프라인 클레스</a></li>
+                        <li><a href="#">MCN 사업</a></li>
+                    </ul>
+                </li>
+                <li class="gnb-item">
+                    <a  class="title" href="#">시현하다 Moment</a>
+                    <ul class="gnb-item-wrap">
+                        <li><a href="#"><h4>1인 초상사진</h4></a></li>
+                        <li><a href="#">Info</a></li>
+                        <li><a href="#"></a>FAQ</a></li>
+                        <li></li>
+                        <li><a href="#"><h4>쵤영 카테고리</h4></a></li>
+                        <li><a href="#">2021 S/S Pose</a></li>
+                        <li><a href="#">2021 S/S Coloring</a></li>
+                        <li><a href="#">1인 프로필</a></li>
+                        <li><a href="#">증명사진</a></li>
+                        <li></li>
+                        <li><a href="#"><h4>예약</h4></a></li>
+                        <li><a href="#">모먼트 본점</a></li>
+                        <li><a href="#">강남역점</a></li>
+                        <li><a href="#">경리단점</a></li>
+                        <li><a href="#">역삼점</a></li>
+                        <li><a href="#">대구점</a></li>
+                        <li><a href="#">광주점</a></li>
+                    </ul>
+                </li>
+                <li class="gnb-item">
+                    <a  class="title" href="#">시현하다 Gallery</a>
+                    <ul class="gnb-item-wrap">
+                        <li><a href="#"><h4>1인 ~ 6인까지</h4></a></li>
+                        <li><a href="#">Info</a></li>
+                        <li><a href="#"></a>FAQ</a></li>
+                        <li></li>
+                        <li><a href="#"><h4>쵤영 카테고리</h4></a></li>
+                        <li><a href="#">Premium</a></li>
+                        <li><a href="#">Together(2-6인)</a></li>
+                        <li><a href="#">WithPet(반려견)</a></li>
+                        <li></li>
+                        <li><a href="#"><h4>예약</h4></a></li>
+                        <li><a href="#">겔러리LAB</a></li>
+                    </ul>
+                </li>
+                <li class="gnb-item">
+                    <a  class="title" href="#">Online gallery</a>
+                    <ul class="gnb-item-wrap">
+                        <li><a href="#">Online Gallery</a></li>
+                        <li><a href="#">Exhibition</a></li>
+                    </ul>
+                </li>
+                <li class="gnb-item">
+                    <a  class="title" href="#">Collaboration</a>
+                    <ul class="gnb-item-wrap">
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">포트폴리오</a></li>
+                        <li><a href="#">기업촬영 문의</a></li>
+                    </ul>
+                </li>
+
+                <li class="gnb-item"><a  class="title store" href="#">store</a></li>
+                </li>
+                <li class="gnb-item">
+                    <ul class="gnb-item-sns">
+                        <li class="instagram">
+                            <a href="https://www.instagram.com/sihyunhada/?hl=ko">
+                                <img src="./image/icon_instar_m.png" alt="">
+                            </a>
+                        </li class="facebook">
+                        <li>
+                            <a href="https://www.facebook.com/Sihyunhada/">
+                                <img src="./image/icon_fb_m.png" alt="">
+                            </a>
+                        </li>
+                        <li class="youtube">
+                            <a href="https://www.youtube.com/channel/UC9Wajb9XAFyU8OZ9_fcpfdQ">
+                                <img src="./image/icon_youtu_m.png" alt="">
+                            </a>
+                        </li>
+                        <li class="blog">
+                            <a href="https://blog.naver.com/sihyunhada">
+                                <img src="./image/icon_blog_m.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="btn-toggle" onclick="handleToggle()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+        <script>
+            function handleToggle() {
+                var gnb = document.querySelector('.gnb');
+                gnb.classList.toggle('active');
+            }
+        </script>
+<!-- 메인 배너 슬라이더 -->
+                <!-- sliderContainer -->
+        <section class="slider-container">
+            <input type="radio" name="tab" id="tab1" checked>
+            <input type="radio" name="tab" id="tab2">
+            <input type="radio" name="tab" id="tab3">
+            <input type="radio" name="tab" id="tab4">
+            <input type="radio" name="tab" id="tab5">
+            <input type="radio" name="tab" id="tab6">
+
+            <div class="slider-view">
+            <div class="slider-list">
+                <div class="slider-item slider">
+                </div>
+                <div class="slider-item slider">
+                </div>
+                <div class="slider-item slider">
+                </div>
+                <div class="slider-item slider">
+                </div>
+                <div class="slider-item slider">
+                </div>
+                <div class="slider-item slider">
+                </div>
+            </div>
+            <div class="tab-btn-box">
+                <label for="tab1"></label>
+                <label for="tab2"></label>
+                <label for="tab3"></label>
+                <label for="tab4"></label>
+                <label for="tab5"></label>
+                <label for="tab6"></label>
+            </div>
+            <a class="event-link" href="#">5월 이벤트 안내</a>
+        </section>
+
+<!-- sns 아이콘 박스 -->
+        <section class="sns-asid">
+            <ul class="sns">
+                <li class="instagram">
+                    <a href="https://www.instagram.com/sihyunhada/?hl=ko">
+                    </a>
+                </li class="facebook">
+                <li>
+                    <a href="https://www.facebook.com/Sihyunhada/">
+                    </a>
+                </li>
+                <li class="youtube">
+                    <a href="https://www.youtube.com/channel/UC9Wajb9XAFyU8OZ9_fcpfdQ">
+                    </a>
+                </li>
+                <li class="blog">
+                    <a href="https://blog.naver.com/sihyunhada">
+                    </a>
+                </li>            
+            </ul>
+
+<!-- youtub 채널 -->
+        </section>
+        <section class="youtub-container">
+            <div class="left">
+                <a href="https://www.youtube.com/channel/UC9Wajb9XAFyU8OZ9_fcpfdQ">시현하다 Youtube</a>
+            </div>
+            <div class="right">
+                <a href="#">시현하다 Online Gallery</a>
+            </div>
+        </section>
+        
+<!-- pc 버전 화면 -->
+        <section class="event-container">
+            
+            <input type="radio" name="tab-2" id="tab1-2" checked>
+            <input type="radio" name="tab-2" id="tab2-2">
+            <h1><strong>Notice</strong></h1>
+            <div class="event-view">
+            <div class="event-list">
+                <div class="event-item">
+                    <ul class="notice-list">
+                        <li class="notice-item">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img1.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>시현하다 갤러리 LAB 5월 예약 안내<br>-</p>
+                        </li>
+                        <li class="notice-item">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img2.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>시현하다 모먼트 5월 예약 안내<br>-</p>
+                        </li>
+                        <li class="notice-item">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img3.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>시현하다 레코더즈 정식 문하생 모집공고<br>-</p>
+                        </li>
+                        <li class="notice-item">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img4.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>5월 편지를 찍다 이벤트 안내<br><br>-</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="event-item">
+                    <ul class="notice-list">
+                        <li class="notice-item">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img5.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>5월 가정의 달 이벤트 총정리<br>-</p>
+                        </li>
+                        <li class="notice-item">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img6.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>5월 효도사진 이벤트 안내<br>-</p>
+                        </li>
+                        <li class="notice-item">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img7.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>5월 이달의 컬러링<br>-</p>
+                        </li>
+                        <li class="notice-item">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img8.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>5월 장수사진 이벤트 안내<br>-</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-btn-box2">
+                <label for="tab1-2"></label>
+                <label for="tab2-2"></label>
+            </div>
+        </section>
+
+<!-- 테블릿버전 화면 -->
+        <section class="event-container-tablet">
+            
+            <input type="radio" name="tab-3" id="tab1-3" checked>
+            <input type="radio" name="tab-3" id="tab2-3">
+            <input type="radio" name="tab-3" id="tab3-3">
+            <input type="radio" name="tab-3" id="tab4-3">
+            <h1><strong>Notice</strong></h1>
+            <div class="event-view-t">
+            <div class="event-list-t">
+                <div class="event-item-t ">
+                    <ul class="notice-list">
+                        <li class="notice-item-t">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img1.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>시현하다 갤러리 LAB 5월 예약 안내<br>-</p>
+                        </li>
+                        <li class="notice-item-t">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img2.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>시현하다 모먼트 5월 예약 안내<br>-</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="event-item-t">
+                    <ul class="notice-list">
+                        <li class="notice-item-t">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img3.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>시현하다 레코더즈 정식 문하생 모집공고<br>-</p>
+                        </li>
+                        <li class="notice-item-t">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img4.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>5월 편지를 찍다 이벤트 안내<br><br>-</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="event-item-t">
+                    <ul class="notice-list">
+                        <li class="notice-item-t">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img5.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>5월 가정의 달 이벤트 총정리<br>-</p>
+                        </li>
+                        <li class="notice-item-t">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img6.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>5월 효도사진 이벤트 안내<br>-</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="event-item-t">
+                    <ul class="notice-list">
+                        <li class="notice-item-t">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img7.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>5월 이달의 컬러링<br>-</p>
+                        </li>
+                        <li class="notice-item-t">
+                            <div class="photo">
+                                <p>click</p>
+                                <a href="#">
+                                    <img src="./image/event-img8.jpg" alt="이벤트 이미지">
+                                </a>
+                            </div>
+                            <p>5월 장수사진 이벤트 안내<br>-</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-btn-box3">
+                <label for="tab1-3"></label>
+                <label for="tab2-3"></label>
+                <label for="tab3-3"></label>
+                <label for="tab4-3"></label>
+            </div>
+        </section>
+<!-- 모바일 버전 화면 -->
+        <section class="event-container-mobile">
+            <h1><strong>Notice</strong></h1>
+            <div class="slide-mobile">
+                <input type="radio" name="tab-m" id="tab-m-1" checked>
+                <input type="radio" name="tab-m" id="tab-m-2">
+                <input type="radio" name="tab-m" id="tab-m-3">
+                <input type="radio" name="tab-m" id="tab-m-4">
+                <input type="radio" name="tab-m" id="tab-m-5">
+                <input type="radio" name="tab-m" id="tab-m-6">
+                <input type="radio" name="tab-m" id="tab-m-7">
+                <input type="radio" name="tab-m" id="tab-m-8">
+                <ul class="slider-m">
+                    <li>
+                        <div class="photo">
+                            <a href="#">
+                                <img src="./image/event-img1.jpg" alt="이벤트 이미지">
+                            </a>
+                        </div>
+                        <p>시현하다 갤러리 LAB 5월 예약 안내<br>-</p>
+                    </li>
+                    <li>
+                        <div class="photo">
+                            <a href="#">
+                                <img src="./image/event-img2.jpg" alt="이벤트 이미지">
+                            </a>
+                        </div>
+                        <p>시현하다 모먼트 5월 예약 안내<br>-</p>
+                    </li>
+                    <li>
+                        <div class="photo">
+                            <a href="#">
+                                <img src="./image/event-img3.jpg" alt="이벤트 이미지">
+                            </a>
+                        </div>
+                        <p>시현하다 레코더즈 정식 문하생 모집공고<br>-</p>
+                    </li>
+                    <li>
+                        <div class="photo">
+                            <a href="#">
+                                <img src="./image/event-img4.jpg" alt="이벤트 이미지">
+                            </a>
+                        </div>
+                        <p>5월 편지를 찍다 이벤트 안내<br><br>-</p>
+                    </li>
+                    <li>
+                        <div class="photo">
+                            <a href="#">
+                                <img src="./image/event-img5.jpg" alt="이벤트 이미지">
+                            </a>
+                        </div>
+                        <p>5월 가정의 달 이벤트 총정리<br>-</p>
+                    </li>
+                    <li>
+                        <div class="photo">
+                            <a href="#">
+                                <img src="./image/event-img6.jpg" alt="이벤트 이미지">
+                            </a>
+                        </div>
+                        <p>5월 효도사진 이벤트 안내<br>-</p>
+                    </li>
+                    <li>
+                        <div class="photo">
+                            <a href="#">
+                                <img src="./image/event-img7.jpg" alt="이벤트 이미지">
+                            </a>
+                        </div>
+                        <p>5월 이달의 컬러링<br>-</p>
+                    </li>
+                    <li>
+                        <div class="photo">
+                            <a href="#">
+                                <img src="./image/event-img8.jpg" alt="이벤트 이미지">
+                            </a>
+                        </div>
+                        <p>5월 이달의 컬러링<br>-</p>
+                    </li>
+                </ul>
+                <p class="tab-m">
+                    <label for="tab-m-1"></label>
+                    <label for="tab-m-2"></label>
+                    <label for="tab-m-3"></label>
+                    <label for="tab-m-4"></label>
+                    <label for="tab-m-5"></label>
+                    <label for="tab-m-6"></label>
+                    <label for="tab-m-7"></label>
+                    <label for="tab-m-8"></label>
+                </p>
+            </div>
+        </section>
+        <footer>
+            <span>Company : (주)레코더즈</span>
+            <span>Business-License : 838-87-01142</span>
+            <br>
+            <span>Tel : 1811-9096</span>
+            <span>Email : info@sihyunhada.com</span>
+            <span>Business-Email : yellow@sihyunhada.com</span>
+            <br>
+            <span>Addr : 서울특별시 강남구 테헤란로19길 53-6</span>
+            <br>
+            <br>
+            <span>Order-License : 2019-서울강남-00879</span>
+            <span>Representation : 김영순</span>
+            <br>
+            <br>
+            <div class="txt_bx01">
+                <div class="copy_txt">
+                    Copyright © 2018 by Recorders All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
